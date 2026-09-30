@@ -1,28 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Aster Dental Studio — thoughtful modern dentistry, designed around you.">
-<title>Aster Dental Studio — Care that feels different</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#17343a;--teal:#3b8584;--mint:#e8f2ee;--cream:#faf9f5;--ink:#20363a;--muted:#6c7c7e;--line:#e4e9e5;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif}h1,h2,h3{font-family:Manrope,sans-serif;letter-spacing:-.045em;margin:0}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.topline{background:var(--navy);color:#dce9e5;font-size:11px;padding:9px 0}.topline .wrap{display:flex;justify-content:space-between}.nav{height:83px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font:800 20px Manrope;letter-spacing:-.05em}.logo{width:34px;height:34px;border-radius:50% 50% 50% 8px;background:var(--teal);color:white;display:grid;place-items:center;font-size:18px}.links{display:flex;gap:29px;color:#617275;font-size:13px}.navcta,.btn{display:inline-flex;align-items:center;gap:12px;background:var(--teal);color:white;padding:13px 19px;border-radius:7px;font-size:12px;font-weight:700;border:0;cursor:pointer}.hero{display:grid;grid-template-columns:.93fr 1.07fr;gap:50px;align-items:center;padding:54px 0 75px}.eyebrow{font-size:10px;letter-spacing:.17em;text-transform:uppercase;font-weight:800;color:var(--teal);display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:22px;height:1px;background:var(--teal)}.hero h1{font-size:clamp(48px,6vw,75px);line-height:1.04;margin:20px 0}.hero h1 span{color:var(--teal);font-family:Georgia,serif;font-style:italic;font-weight:500}.lead{font-size:16px;line-height:1.8;color:var(--muted);max-width:470px}.actions{display:flex;align-items:center;gap:19px;margin:28px 0}.textlink{font-size:12px;font-weight:700;color:var(--navy);border-bottom:1px solid #9eb8b3;padding-bottom:5px}.photo{height:510px;border-radius:170px 170px 14px 14px;overflow:hidden;position:relative;background:#dce9e4}.photo img{width:100%;height:100%;object-fit:cover}.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#17343a35,transparent 55%)}.photo-note{position:absolute;z-index:1;bottom:20px;left:22px;color:white;font-size:11px;letter-spacing:.08em}.badge{position:absolute;z-index:2;left:-24px;bottom:42px;background:white;border-radius:14px;padding:17px 20px;box-shadow:0 15px 40px #20363a20;font-size:11px;color:var(--muted)}.badge strong{display:block;font:700 16px Manrope;color:var(--navy);margin-bottom:3px}.introbar{background:var(--mint);padding:20px 0}.introbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:15px}.introbar span{font-size:12px;color:#58706e}.introbar b{font:700 13px Manrope;color:var(--navy)}.section{padding:96px 0}.sectionhead{text-align:center;max-width:700px;margin:0 auto 42px}.section h2{font-size:clamp(34px,4.3vw,52px);line-height:1.12;margin:15px 0}.sub{font-size:14px;line-height:1.8;color:var(--muted);max-width:610px;margin:auto}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:white;border:1px solid var(--line);border-radius:12px;padding:27px;min-height:225px;transition:.2s}.service:hover{transform:translateY(-4px);box-shadow:0 14px 35px #17343a0d}.ico{width:43px;height:43px;background:var(--mint);border-radius:11px;display:grid;place-items:center;color:var(--teal);font-size:20px;margin-bottom:25px}.service h3{font-size:18px;margin-bottom:10px}.service p{font-size:12px;line-height:1.75;color:var(--muted)}.service a{font-size:11px;font-weight:700;color:var(--teal);display:inline-block;margin-top:12px}.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.splitimg{height:430px;border-radius:12px;overflow:hidden;position:relative}.splitimg img{width:100%;height:100%;object-fit:cover}.splitcopy h2{font-size:clamp(34px,4vw,48px);margin:16px 0}.splitcopy p{font-size:13px;line-height:1.8;color:var(--muted)}.ticks{list-style:none;padding:0;margin:22px 0;display:grid;gap:13px}.ticks li{font-size:12px;color:#526467;display:flex;gap:10px;align-items:center}.ticks li:before{content:"✓";width:20px;height:20px;display:grid;place-items:center;border-radius:50%;background:var(--mint);color:var(--teal);font-weight:800}.soft{background:var(--mint)}.softbox{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.softbox img{width:100%;height:390px;object-fit:cover;border-radius:12px}.testimonial{background:var(--navy);color:white;padding:70px 20px;text-align:center}.testimonial blockquote{font:600 clamp(22px,3vw,34px) Manrope;letter-spacing:-.035em;line-height:1.4;max-width:800px;margin:22px auto}.testimonial small{color:#b8d0cb;font-size:11px}.team{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.person{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.person img{width:100%;height:250px;object-fit:cover}.person div{padding:18px}.person h3{font-size:16px}.person p{font-size:11px;color:var(--muted);margin:6px 0 0}.cta{background:var(--navy);color:white;border-radius:14px;padding:50px;display:flex;align-items:center;justify-content:space-between;gap:30px;margin:0 0 75px}.cta h2{font-size:clamp(30px,4vw,43px);max-width:570px}.cta p{color:#c0d0cd;font-size:12px;line-height:1.6}.cta .btn{background:#b4d9c9;color:var(--navy);white-space:nowrap}.faq{max-width:780px;margin:35px auto 0}.faq details{border-bottom:1px solid var(--line);padding:18px 0}.faq summary{list-style:none;cursor:pointer;font-size:13px;font-weight:700}.faq summary:after{content:"＋";float:right;color:var(--teal)}.faq details[open] summary:after{content:"−"}.faq p{font-size:12px;line-height:1.75;color:var(--muted);max-width:700px}footer{background:#10292e;color:#c1d0ce;padding:42px 0 24px}.footgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px;padding-bottom:35px}.footgrid .brand{color:white}.footgrid p,.footgrid a{font-size:11px;line-height:2;color:#b3c4c1}.footgrid h4{font:700 12px Manrope;color:white;margin:0 0 12px}.copyright{border-top:1px solid #ffffff20;padding-top:18px;font-size:10px;color:#91a8a4;display:flex;justify-content:space-between}.mobile{display:none}@media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr;gap:35px;padding-top:40px}.photo{height:420px;margin-left:20px}.introbar .wrap{flex-wrap:wrap}.services,.team{grid-template-columns:1fr 1fr}.split,.softbox{grid-template-columns:1fr;gap:30px}.splitimg{height:350px}.softbox img{height:320px}.section{padding:70px 0}.cta{padding:35px;flex-direction:column;align-items:flex-start}.footgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.wrap{width:calc(100% - 32px)}.topline .wrap{gap:10px;flex-wrap:wrap}.nav{height:70px}.navcta{font-size:10px;padding:11px}.hero h1{font-size:49px}.photo{height:350px;border-radius:120px 120px 12px 12px}.badge{left:-10px}.services,.team{grid-template-columns:1fr}.sectionhead{text-align:left}.sectionhead .eyebrow{justify-content:flex-start}.person img{height:280px}.footgrid{grid-template-columns:1fr 1fr}.copyright{gap:10px;flex-direction:column}.cta{padding:30px 24px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrightSmile Dental offers patient-focused preventive, restorative, cosmetic and family dental care. Explore services, learn what to expect and request an appointment.">
+  <meta name="keywords" content="dental clinic, dentist, preventive dentistry, dental cleaning, dental crowns, teeth whitening, family dentistry">
+  <meta name="theme-color" content="#0b7890">
+  <title>BrightSmile Dental | Thoughtful Care for Every Smile</title>
+  <style>
+    :root {
+      --ink: #173447; --muted: #5d7180; --teal: #087f91; --teal-dark: #086879;
+      --mint: #eaf7f7; --blue-pale: #f1f8fb; --line: #dce9ed; --white: #fff;
+      --shadow: 0 16px 42px rgba(21, 61, 78, .09); --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; background: #fff; }
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    a { color: inherit; }
+    .container { width: min(1160px, calc(100% - 44px)); margin: 0 auto; }
+    .topbar { background: #f4fbfc; border-bottom: 1px solid var(--line); color: #57717f; font-size: 12px; }
+    .topbar .container { min-height: 34px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.96); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(220,233,237,.8); }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 22px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; font-size: 18px; letter-spacing: -.4px; white-space: nowrap; }
+    .brand-mark { width: 40px; height: 40px; border-radius: 13px; display: grid; place-items: center; background: var(--teal); color: white; font-size: 22px; }
+    .brand small { display: block; color: #6a7f8b; font-size: 9px; font-weight: 600; letter-spacing: 1.3px; text-transform: uppercase; margin-top: -2px; }
+    nav { display: flex; align-items: center; gap: 23px; }
+    nav a { text-decoration: none; color: #425b6a; font-size: 12px; font-weight: 700; }
+    nav a:hover { color: var(--teal); }
+    .button { display: inline-flex; justify-content: center; align-items: center; gap: 8px; padding: 12px 19px; border-radius: 999px; text-decoration: none; font-size: 12px; font-weight: 800; background: var(--teal); color: #fff; border: 1px solid var(--teal); transition: .2s ease; }
+    .button:hover { background: var(--teal-dark); transform: translateY(-1px); }
+    .button.light { color: var(--ink); background: #fff; border-color: #c7dce2; }
+    .button.light:hover { color: var(--teal); border-color: var(--teal); background: #f9fdfd; }
+    .hero { background: linear-gradient(112deg, #edf9fa 0%, #edf9fa 48%, #d9f0f2 100%); overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: .93fr 1.07fr; align-items: center; min-height: 500px; gap: 35px; }
+    .hero-copy { padding: 58px 0; }
+    .eyebrow { color: var(--teal); font-size: 10px; font-weight: 850; text-transform: uppercase; letter-spacing: 1.8px; }
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; }
+    h1 { margin: 10px 0 16px; color: #12364a; font-size: clamp(43px, 5.1vw, 67px); line-height: 1.04; letter-spacing: -2.2px; }
+    .hero-copy p { max-width: 490px; color: #4c6674; font-size: 15px; margin: 0 0 24px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .hero-image { height: 410px; border-radius: 34px 0 0 34px; overflow: hidden; box-shadow: var(--shadow); }
+    .hero-image img { object-position: center; }
+    .trust-row { display: flex; flex-wrap: wrap; gap: 19px; margin-top: 28px; }
+    .trust-item { display: flex; align-items: center; gap: 8px; color: #496675; font-size: 11px; font-weight: 700; }
+    .trust-icon { display: grid; place-items: center; width: 29px; height: 29px; border-radius: 50%; color: var(--teal); background: #fff; border: 1px solid #d2e8eb; font-size: 14px; }
+    .intro { padding: 68px 0 25px; }
+    .section-heading { max-width: 740px; margin: 0 auto 34px; text-align: center; }
+    .section-heading h2 { margin: 7px 0 10px; font-size: clamp(30px, 3.2vw, 40px); line-height: 1.18; color: #15394d; letter-spacing: -.7px; }
+    .section-heading p { margin: 0; color: var(--muted); font-size: 13px; }
+    .service-list { padding: 16px 0 72px; }
+    .service-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5.5vw, 76px); align-items: center; margin: 0 auto 62px; }
+    .service-row:last-child { margin-bottom: 0; }
+    .service-row.reverse .service-visual { order: 2; }
+    .service-row.reverse .service-copy { order: 1; }
+    .service-visual { height: 345px; border-radius: var(--radius); overflow: hidden; background: #e8f2f4; box-shadow: var(--shadow); position: relative; }
+    .service-visual img { transition: transform .5s ease; }
+    .service-row:hover .service-visual img { transform: scale(1.025); }
+    .service-copy { padding: 8px 0; }
+    .service-number { display: inline-block; margin-bottom: 10px; color: var(--teal); font-size: 10px; font-weight: 850; letter-spacing: 1.5px; text-transform: uppercase; }
+    .service-copy h2 { margin: 0 0 12px; color: #15394d; font-size: clamp(27px, 3vw, 36px); line-height: 1.15; letter-spacing: -.5px; }
+    .service-copy p { color: #5b707d; font-size: 13px; margin: 0 0 12px; }
+    .service-copy h3 { font-family: inherit; font-size: 13px; margin: 16px 0 6px; color: #25495c; }
+    .service-copy ul { padding-left: 18px; margin: 5px 0 14px; color: #5b707d; font-size: 12px; }
+    .service-copy li { margin: 3px 0; }
+    .note { padding: 11px 14px; background: #f0f8f9; border-left: 3px solid #75bfc5; border-radius: 0 9px 9px 0; color: #526e7b; font-size: 11px; }
+    .care-band { background: #f2f9fb; padding: 68px 0; }
+    .care-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 54px; align-items: center; }
+    .care-image { height: 380px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .care-copy h2 { font-size: 36px; line-height: 1.15; margin: 8px 0 12px; color: #15394d; }
+    .care-copy p { color: var(--muted); font-size: 13px; }
+    .care-points { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 22px; }
+    .care-point { background: #fff; border: 1px solid var(--line); padding: 14px; border-radius: 13px; }
+    .care-point b { display: block; font-size: 12px; color: #23485b; }
+    .care-point span { display: block; color: #687d88; font-size: 11px; line-height: 1.5; margin-top: 3px; }
+    .visit { padding: 68px 0; }
+    .visit-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 52px; align-items: center; }
+    .visit-copy h2 { color: #15394d; font-size: 36px; line-height: 1.16; margin: 7px 0 10px; }
+    .visit-copy > p { color: var(--muted); font-size: 13px; }
+    .steps { margin-top: 23px; display: grid; gap: 17px; }
+    .step { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start; }
+    .step-num { width: 31px; height: 31px; border-radius: 50%; background: #e4f4f5; color: var(--teal); display: grid; place-items: center; font-size: 12px; font-weight: 850; }
+    .step b { display: block; color: #24485b; font-size: 12px; }
+    .step span { display: block; color: #657a86; font-size: 11px; line-height: 1.55; margin-top: 2px; }
+    .visit-image { height: 365px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+    .faq-section { background: #f4fafb; padding: 68px 0 72px; }
+    .faq-list { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; }
+    details { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+    summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 10px; color: #21465a; font-size: 12px; font-weight: 800; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--teal); font-size: 18px; line-height: 1; }
+    details[open] summary::after { content: "−"; }
+    details p { color: #617682; font-size: 11px; margin: 10px 0 1px; line-height: 1.6; }
+    .cta { padding: 29px 0; background: linear-gradient(100deg, #087f91, #086879); color: #fff; }
+    .cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    .cta h2 { margin: 0; font-size: 27px; line-height: 1.2; }
+    .cta p { margin: 5px 0 0; font-size: 11px; color: #e2f4f5; }
+    .cta .button { background: #fff; color: #174456; border-color: #fff; white-space: nowrap; }
+    footer { background: #fbfdfd; color: #607682; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 30px; padding: 37px 0 28px; }
+    footer h3 { font-family: inherit; color: #21465a; font-size: 12px; margin: 0 0 11px; }
+    footer p, footer li, footer a { font-size: 10.5px; }
+    footer p { margin: 9px 0; }
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer li { margin: 5px 0; }
+    footer a { color: #607682; text-decoration: none; }
+    footer a:hover { color: var(--teal); }
+    .footer-brand { margin-bottom: 12px; }
+    .footer-note { font-size: 9px; color: #8a9ba3; margin-top: 12px; }
+    .copyright { border-top: 1px solid var(--line); padding: 12px 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; color: #7a8d97; font-size: 9px; }
+    @media (max-width: 900px) {
+      nav { gap: 11px; } nav a { font-size: 10px; }
+      .service-row { gap: 30px; } .service-visual { height: 300px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 650px) {
+      .container { width: min(100% - 30px, 540px); }
+      .topbar .container { justify-content: center; text-align: center; }
+      .nav { padding: 10px 0; min-height: auto; flex-wrap: wrap; }
+      nav { width: 100%; overflow-x: auto; padding: 5px 0 2px; gap: 16px; }
+      nav a { white-space: nowrap; }
+      nav .button { padding: 8px 12px; }
+      .hero-grid, .service-row, .care-grid, .visit-grid { grid-template-columns: 1fr; gap: 24px; }
+      .hero-copy { padding: 42px 0 0; }
+      h1 { font-size: 48px; }
+      .hero-image { height: 270px; border-radius: 22px 22px 0 0; }
+      .trust-row { gap: 10px 14px; margin: 20px 0 23px; }
+      .intro { padding: 48px 0 10px; }
+      .service-list { padding: 12px 0 48px; }
+      .service-row { margin-bottom: 43px; }
+      .service-row.reverse .service-visual, .service-row.reverse .service-copy { order: initial; }
+      .service-visual { height: 250px; }
+      .service-copy h2, .care-copy h2, .visit-copy h2 { font-size: 30px; }
+      .care-band, .visit, .faq-section { padding: 48px 0; }
+      .care-image, .visit-image { height: 260px; }
+      .care-grid { gap: 25px; }
+      .care-points { gap: 9px; }
+      .faq-list { grid-template-columns: 1fr; }
+      .cta-inner { align-items: flex-start; flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 22px 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }
+  </style>
 </head>
 <body>
-<div class="topline"><div class="wrap"><span>Thoughtful care. Modern dentistry.</span><span>Mon–Sat · 9:00 AM–6:00 PM &nbsp; | &nbsp; +91 80 4567 8900</span></div></div>
-<header class="wrap nav"><a class="brand" href="#"><span class="logo">✳</span> aster<span style="font-weight:500;color:#79918e"> dental studio</span></a><nav class="links"><a href="#care">Our care</a><a href="#approach">Our approach</a><a href="#team">Meet the team</a><a href="#faq">FAQs</a></nav><a class="navcta" href="#contact">Book a consultation ↗</a></header>
-<main>
-<section class="wrap hero"><div><div class="eyebrow">A little more human</div><h1>Care that feels <span>different.</span></h1><p class="lead">Modern dentistry, thoughtful people, and a calmer experience from the moment you walk in. Your comfort is part of the care.</p><div class="actions"><a class="btn" href="#contact">Plan your visit ↗</a><a class="textlink" href="#care">Explore our care</a></div><p style="font-size:11px;color:#83918f">Personalised appointments · Clear conversations · Gentle approach</p></div><div class="photo"><img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=85" alt="Modern dental clinic treatment room"><div class="photo-note">A welcoming space for your smile</div><div class="badge"><strong>Here for your smile</strong>Care, clarity, and comfort</div></div></section>
-<div class="introbar"><div class="wrap"><span><b>01 / Thoughtful care</b> &nbsp; A plan that starts with listening</span><span><b>02 / Modern approach</b> &nbsp; Clear options, no pressure</span><span><b>03 / Your comfort</b> &nbsp; You're part of every decision</span></div></div>
-<section class="wrap section" id="care"><div class="sectionhead"><div class="eyebrow" style="justify-content:center">Care for every chapter</div><h2>Healthy smiles start with feeling heard.</h2><p class="sub">From routine checkups to smile transformations, our care is centred on your needs, your questions, and your goals.</p></div><div class="services"><article class="service"><div class="ico">✧</div><h3>General dentistry</h3><p>Routine examinations, professional cleaning, and preventive care to help you maintain a healthy smile.</p><a href="#contact">Explore this service ↗</a></article><article class="service"><div class="ico">◒</div><h3>Cosmetic dentistry</h3><p>Discuss options such as whitening and smile enhancements with a team that starts with your goals.</p><a href="#contact">Explore this service ↗</a></article><article class="service"><div class="ico">⌁</div><h3>Restorative care</h3><p>Personalised consultations for restoring comfort, function, and confidence in your smile.</p><a href="#contact">Explore this service ↗</a></article><article class="service"><div class="ico">♡</div><h3>Family dentistry</h3><p>Supportive dental visits for different ages, with clear explanations and a welcoming environment.</p><a href="#contact">Explore this service ↗</a></article><article class="service"><div class="ico">✳</div><h3>Teeth alignment</h3><p>Explore alignment options and understand what may be suitable for your individual needs.</p><a href="#contact">Explore this service ↗</a></article><article class="service"><div class="ico">＋</div><h3>Urgent appointments</h3><p>If you're experiencing dental discomfort, contact us to discuss availability and next steps.</p><a href="#contact">Contact the studio ↗</a></article></div></section>
-<section class="wrap section" id="approach"><div class="split"><div class="splitimg"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1100&q=85" alt="Bright contemporary dental clinic interior"></div><div class="splitcopy"><div class="eyebrow">The Aster experience</div><h2>Good care begins with a good conversation.</h2><p>We believe a dental visit should feel clear, considered, and collaborative. We'll take time to understand what's important to you and explain your options in everyday language.</p><ul class="ticks"><li>We listen before we recommend</li><li>We explain your options and next steps</li><li>We make room for your questions</li><li>We respect your pace and preferences</li></ul><a class="btn" href="#contact">Get to know us ↗</a></div></div></section>
-<section class="soft section"><div class="wrap softbox"><div><div class="eyebrow">Designed around you</div><h2 style="font-size:clamp(34px,4vw,48px);margin:16px 0">A calmer visit, from hello to see you soon.</h2><p class="sub" style="margin:0">Whether it's your first visit or your regular checkup, we want you to know what to expect. Our team will guide you through each step and make sure you have space to ask questions.</p><ul class="ticks"><li>A warm welcome and time to settle in</li><li>A conversation about your concerns</li><li>A clear explanation of recommended care</li></ul></div><img src="https://images.unsplash.com/photo-1629909615957-be38d48fbbe6?auto=format&fit=crop&w=1100&q=85" alt="Modern dental care space"></div></section>
-<section class="testimonial"><div class="eyebrow" style="justify-content:center;color:#a9d9c8">A note from our philosophy</div><blockquote>“The best dental experience is one where you feel informed, comfortable, and genuinely cared for.”</blockquote><small>The Aster Dental Studio approach</small></section>
-<section class="wrap section" id="team"><div class="sectionhead"><div class="eyebrow" style="justify-content:center">Meet your care team</div><h2>People first. Smiles always.</h2><p class="sub">A sample team section for this portfolio concept. Replace these profiles with verified clinic and practitioner details before publishing as a real business.</p></div><div class="team"><article class="person"><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=85" alt="Portrait of a healthcare professional"><div><h3>Dr. Ananya Rao</h3><p>Lead dentist · Illustrative profile</p></div></article><article class="person"><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=85" alt="Portrait of a healthcare professional"><div><h3>Dr. Arjun Mehta</h3><p>Restorative care · Illustrative profile</p></div></article><article class="person"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=800&q=85" alt="Portrait of a healthcare professional"><div><h3>Dr. Mira Shah</h3><p>Cosmetic dentistry · Illustrative profile</p></div></article></div></section>
-<section class="wrap section" id="faq"><div class="sectionhead"><div class="eyebrow" style="justify-content:center">Before your visit</div><h2>Frequently asked questions</h2><p class="sub">A few helpful details to make planning your visit easier.</p></div><div class="faq"><details><summary>How do I book an appointment?</summary><p>Use the contact form below or call the clinic to ask about appointment availability. The form on this demo page does not submit to a live booking system.</p></details><details><summary>What should I expect at my first visit?</summary><p>Your first appointment typically begins with a conversation about your dental history, concerns, and goals. The care team can explain what examinations or next steps may be appropriate.</p></details><details><summary>Do you accept walk-ins?</summary><p>Availability can vary. Please call ahead to confirm whether the clinic can accommodate a walk-in visit.</p></details><details><summary>How much will my treatment cost?</summary><p>Costs depend on your individual needs and the treatment recommended. Ask the clinic for an estimate after a consultation.</p></details><details><summary>Can I discuss treatment options before deciding?</summary><p>Yes. You can ask the dental team to explain the available options, expected steps, and relevant considerations before making a decision.</p></details><details><summary>What if I feel nervous about dental treatment?</summary><p>Let the team know when booking or arriving. They can discuss your concerns and explain how they may help you feel more comfortable.</p></details></div></section>
-<section class="wrap" id="contact"><div class="cta"><div><div class="eyebrow" style="color:#a9d9c8">Your next step</div><h2>Let's make your next visit a little easier.</h2><p>Have a question or want to plan a consultation? We'd be happy to hear from you.</p></div><a class="btn" href="mailto:hello@example.com?subject=Aster%20Dental%20enquiry">Contact the studio ↗</a></div></section>
-</main>
-<footer><div class="wrap"><div class="footgrid"><div><a class="brand" href="#"><span class="logo">✳</span> aster dental studio</a><p>Thoughtful care, modern dentistry, and a welcoming experience designed around you.</p></div><div><h4>Explore</h4><a href="#care">Our care</a><br><a href="#approach">Our approach</a><br><a href="#team">Our team</a></div><div><h4>Visit</h4><p>12, Sample Road<br>Bengaluru, Karnataka<br>India</p></div><div><h4>Contact</h4><p>+91 80 4567 8900<br>hello@example.com<br>Mon–Sat · 9 AM–6 PM</p></div></div><div class="copyright"><span>© 2026 Aster Dental Studio · Fictional portfolio concept</span><span>Clinic details and profiles are placeholders. Confirm before real-world use.</span></div></div></footer>
-</body></html>
+  <div class="topbar"><div class="container"><span>Thoughtful dental care for every stage of life</span><span>Portfolio demonstration · Sample clinic details</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="BrightSmile Dental home"><span class="brand-mark" aria-hidden="true">✦</span><span>BrightSmile Dental<small>Healthy teeth. Happier lives.</small></span></a>
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">Our Approach</a><a href="#first-visit">First Visit</a><a href="#faqs">FAQs</a><a class="button" href="#contact">Request an Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Welcome to BrightSmile Dental</div>
+          <h1>Care that helps<br>you smile freely.</h1>
+          <p>Your oral health is part of your overall well-being. BrightSmile Dental brings preventive, restorative and cosmetic care together in a welcoming setting, with clear explanations and treatment planning built around each patient.</p>
+          <div class="hero-actions"><a class="button" href="#contact">Request an appointment <span aria-hidden="true">→</span></a><a class="button light" href="#services">Explore our services</a></div>
+          <div class="trust-row"><span class="trust-item"><i class="trust-icon">✓</i> Patient-first approach</span><span class="trust-item"><i class="trust-icon">✦</i> Clear treatment guidance</span><span class="trust-item"><i class="trust-icon">♡</i> Care for families</span></div>
+        </div>
+        <div class="hero-image"><img src="https://images.pexels.com/photos/3884103/pexels-photo-3884103.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Dentist and patient in a bright, modern dental treatment room" fetchpriority="high"></div>
+      </div>
+    </section>
+
+    <section class="intro" id="services">
+      <div class="container">
+        <div class="section-heading"><div class="eyebrow">Complete dental care</div><h2>Support for a healthier smile, at every age</h2><p>From routine examinations to more involved treatment, understanding your options is an important part of good dental care. Explore the services below to learn what they involve and when they may be considered.</p></div>
+      </div>
+    </section>
+
+    <section class="service-list container" aria-label="Dental services">
+      <article class="service-row">
+        <div class="service-visual"><img src="https://images.pexels.com/photos/6812561/pexels-photo-6812561.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Dental professional examining a patient's teeth during a check-up" loading="lazy"></div>
+        <div class="service-copy"><span class="service-number">01 / Preventive care</span><h2>Prevention begins with everyday care</h2><p>Preventive dentistry focuses on keeping teeth and gums healthy and identifying concerns early. Regular dental examinations give a dentist an opportunity to check for tooth decay, gum inflammation, changes in the mouth and other issues that may not be obvious at home.</p><p>A professional cleaning removes plaque and hardened deposits (tartar) from areas that brushing and flossing may miss. Your dental professional can also discuss brushing technique, interdental cleaning, fluoride and habits that may affect your oral health.</p><h3>Preventive visits may include:</h3><ul><li>Examination of teeth, gums and soft tissues</li><li>Professional scaling and polishing when appropriate</li><li>Personalised oral-hygiene advice</li><li>Dental X-rays only when clinically indicated</li></ul><div class="note">How often you need a check-up depends on your oral health and individual risk factors. Your dentist can recommend a suitable interval.</div></div>
+      </article>
+
+      <article class="service-row reverse">
+        <div class="service-visual"><img src="https://images.pexels.com/photos/6812531/pexels-photo-6812531.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Dental treatment equipment in a clean clinical setting" loading="lazy"></div>
+        <div class="service-copy"><span class="service-number">02 / Restorative dentistry</span><h2>Restore comfort, strength and function</h2><p>Tooth decay, cracks, wear and injury can affect how a tooth looks and works. Restorative dentistry aims to repair or replace damaged tooth structure, preserve useful natural teeth where possible and help restore comfortable chewing.</p><p>Depending on the size and location of the problem, a dentist may recommend a filling, an inlay or onlay, a crown, or a bridge. The choice depends on the clinical findings, the amount of remaining tooth structure, your bite and your preferences.</p><h3>Common restorative options:</h3><ul><li><strong>Fillings:</strong> repair areas affected by decay or minor damage.</li><li><strong>Crowns:</strong> cover and protect a tooth that needs additional support.</li><li><strong>Bridges:</strong> replace one or more missing teeth by attaching to supporting teeth or implants.</li><li><strong>Inlays and onlays:</strong> restore selected areas when a standard filling may not be suitable.</li></ul><div class="note">A restoration does not make a tooth immune to future decay. Good home care and recommended follow-up remain important.</div></div>
+      </article>
+
+      <article class="service-row">
+        <div class="service-visual"><img src="https://images.pexels.com/photos/5622271/pexels-photo-5622271.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Dental professional discussing care with a patient" loading="lazy"></div>
+        <div class="service-copy"><span class="service-number">03 / Cosmetic dentistry</span><h2>Enhance your smile while respecting your teeth</h2><p>Cosmetic dentistry addresses the appearance of teeth and the smile. People may seek advice about tooth colour, small chips, uneven edges, gaps or the shape of visible teeth. A consultation helps establish what is causing the concern and which options are appropriate.</p><p>Professional whitening can lighten natural tooth colour, while bonding or veneers may be considered for selected shape or surface concerns. A dentist should explain the benefits, limitations, maintenance and potential effects on tooth structure before treatment begins.</p><h3>Options that may be discussed:</h3><ul><li>Professional teeth whitening for suitable natural teeth</li><li>Composite bonding to repair selected chips or reshape edges</li><li>Veneers for specific colour or shape concerns</li><li>Smile planning that considers oral health, facial features and your goals</li></ul><div class="note">Whitening does not change the colour of crowns, fillings or veneers. Not every cosmetic procedure is suitable for every patient.</div></div>
+      </article>
+
+      <article class="service-row reverse">
+        <div class="service-visual"><img src="https://images.pexels.com/photos/6529107/pexels-photo-6529107.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Patient receiving a dental examination in a clinic" loading="lazy"></div>
+        <div class="service-copy"><span class="service-number">04 / Orthodontics</span><h2>Plan a healthier, more comfortable bite</h2><p>Orthodontic treatment moves teeth gradually to improve alignment and, where possible, the way the upper and lower teeth meet. Treatment may be considered for crowding, spacing, selected bite problems or teeth that are difficult to clean because of their position.</p><p>Options can include fixed braces or removable clear aligners. The appropriate approach depends on the type and complexity of tooth movement needed, oral health, age and the patient's ability to follow the treatment plan.</p><h3>What to know before starting:</h3><ul><li>An assessment is needed to understand the bite and tooth positions.</li><li>Treatment time varies; no single duration applies to everyone.</li><li>Keeping teeth and gums clean is especially important during treatment.</li><li>Retainers are commonly recommended after active treatment to help maintain alignment.</li></ul><div class="note">A dentist or orthodontist can explain expected changes, alternatives, risks and retention needs for your particular case.</div></div>
+      </article>
+
+      <article class="service-row">
+        <div class="service-visual"><img src="https://images.pexels.com/photos/8224633/pexels-photo-8224633.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Child smiling during a friendly dental visit" loading="lazy"></div>
+        <div class="service-copy"><span class="service-number">05 / Children's dentistry</span><h2>Positive dental experiences for growing smiles</h2><p>Children benefit from dental care that is calm, age-appropriate and focused on prevention. Early visits help families receive guidance on cleaning baby teeth, fluoride, nutrition, habits and the development of the mouth. They can also help a child become familiar with the dental setting.</p><p>Depending on a child's needs, care may include monitoring tooth development, preventive treatments, fillings or advice about dental injuries. The dental team can explain each step in language a child can understand and involve parents or caregivers in decisions.</p><h3>Ways families can support oral health:</h3><ul><li>Help children brush twice daily with an age-appropriate amount of fluoride toothpaste.</li><li>Encourage water and balanced meals, and limit frequent sugary snacks and drinks.</li><li>Ask the dentist about protective treatments such as sealants when suitable.</li><li>Seek advice promptly after a tooth injury or persistent pain.</li></ul><div class="note">The timing and type of care depend on the child's age, development and individual dental needs.</div></div>
+      </article>
+
+      <article class="service-row reverse">
+        <div class="service-visual"><img src="https://images.pexels.com/photos/15688027/pexels-photo-15688027.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Dentist providing care in a modern dental clinic" loading="lazy"></div>
+        <div class="service-copy"><span class="service-number">06 / Dental implants</span><h2>Explore options for replacing missing teeth</h2><p>A missing tooth can affect chewing, speech or confidence, and may change how nearby teeth meet. Dental implants are one option for replacing missing teeth. An implant is a small post placed in the jawbone to support a crown, bridge or denture.</p><p>Implant treatment involves careful planning. A dentist or implant clinician assesses oral health, bone volume, medical history and the condition of nearby teeth. Some patients may need additional procedures, while others may be offered a different tooth-replacement option.</p><h3>Topics to discuss at a consultation:</h3><ul><li>Whether an implant is suitable for your mouth and health history</li><li>Expected stages and healing time</li><li>Possible risks, maintenance and long-term review</li><li>Alternatives such as bridges or removable dentures</li></ul><div class="note">Implants require ongoing cleaning and professional maintenance. Longevity varies and cannot be guaranteed.</div></div>
+      </article>
+
+      <article class="service-row">
+        <div class="service-visual"><img src="https://images.pexels.com/photos/3946835/pexels-photo-3946835.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Dental professional working carefully with dental instruments" loading="lazy"></div>
+        <div class="service-copy"><span class="service-number">07 / Root canal treatment</span><h2>When possible, help save a natural tooth</h2><p>Inside each tooth is a space containing soft tissue called the pulp. Deep decay, a crack or trauma can damage or infect this tissue. Root canal treatment removes the affected pulp, cleans and shapes the inside of the tooth, and seals it to help prevent reinfection.</p><p>The need for treatment is determined through an examination and, when appropriate, dental imaging. Local anaesthesia is commonly used. After treatment, a tooth may need a filling or crown depending on how much healthy structure remains.</p><h3>After treatment:</h3><ul><li>Follow the clinician's instructions about eating and caring for the tooth.</li><li>Temporary tenderness can occur; ask the clinic what to expect.</li><li>Attend follow-up visits and complete any recommended final restoration.</li><li>Contact the clinic if pain or swelling worsens or you have concerns.</li></ul><div class="note">Not every tooth can be saved with root canal treatment. Your dentist can discuss prognosis and alternatives, including extraction, if needed.</div></div>
+      </article>
+
+      <article class="service-row reverse">
+        <div class="service-visual"><img src="https://images.pexels.com/photos/6812520/pexels-photo-6812520.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Patient in a dental chair during a dental appointment" loading="lazy"></div>
+        <div class="service-copy"><span class="service-number">08 / Urgent dental concerns</span><h2>Get guidance when a dental problem cannot wait</h2><p>Severe toothache, a broken tooth, swelling or an injury may need prompt dental assessment. If you contact a clinic, describe what happened, when it started and whether you have swelling, fever or difficulty opening your mouth. The team can advise on the next available step.</p><p>For a knocked-out permanent tooth, seek urgent dental care immediately. Handle the tooth by the crown, not the root. If it is dirty, rinse it gently with milk or saline if available; do not scrub it. If possible, keep it moist in milk while travelling to urgent care. Do not attempt to reinsert a baby tooth.</p><h3>Seek emergency medical help if you have:</h3><ul><li>Difficulty breathing or swallowing</li><li>Rapidly spreading swelling of the face or neck</li><li>Uncontrolled bleeding or a serious facial injury</li></ul><div class="note">This demo page does not provide live emergency triage. Contact local emergency services for potentially life-threatening symptoms.</div></div>
+      </article>
+    </section>
+
+    <section class="care-band" id="about">
+      <div class="container care-grid">
+        <div class="care-image"><img src="https://images.pexels.com/photos/7422520/pexels-photo-7422520.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Bright, contemporary dental clinic interior" loading="lazy"></div>
+        <div class="care-copy"><div class="eyebrow">The BrightSmile approach</div><h2>Good care starts with a conversation</h2><p>Dental visits can bring questions or uncertainty. A thoughtful appointment gives you space to explain what is bothering you, understand what the examination shows and consider the available options. Our demo clinic is designed around clear communication, respect and practical guidance.</p><p>Every treatment plan should be based on an individual assessment. Patients should have the opportunity to ask questions, understand relevant risks and benefits, and make informed decisions with their dental professional.</p><div class="care-points"><div class="care-point"><b>Clear explanations</b><span>Understand findings and proposed next steps in plain language.</span></div><div class="care-point"><b>Personalised planning</b><span>Care recommendations reflect individual needs and preferences.</span></div><div class="care-point"><b>Prevention first</b><span>Support for daily habits that protect teeth and gums.</span></div><div class="care-point"><b>Respectful care</b><span>Questions and comfort concerns are part of the conversation.</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="visit" id="first-visit">
+      <div class="container visit-grid">
+        <div class="visit-copy"><div class="eyebrow">Patient information</div><h2>What to expect at your first visit</h2><p>Your first appointment is an opportunity to discuss your concerns and understand your oral health. The exact steps and length of the visit depend on your needs and the clinic's process.</p><div class="steps">
+          <div class="step"><div class="step-num">1</div><div><b>Share your concerns</b><span>Tell the dental team what brought you in, any symptoms you have noticed and what you hope to address.</span></div></div>
+          <div class="step"><div class="step-num">2</div><div><b>Review your dental history</b><span>You may be asked about previous treatment, medicines, allergies and relevant health information.</span></div></div>
+          <div class="step"><div class="step-num">3</div><div><b>Examination and discussion</b><span>The dentist examines your mouth and may recommend X-rays if they are clinically needed. Findings and options should be explained.</span></div></div>
+          <div class="step"><div class="step-num">4</div><div><b>Agree on next steps</b><span>You can discuss timing, costs and alternatives before deciding how to proceed.</span></div></div>
+        </div></div>
+        <div class="visit-image"><img src="https://images.pexels.com/photos/4269360/pexels-photo-4269360.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Welcoming dental clinic reception and treatment environment" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faqs">
+      <div class="container">
+        <div class="section-heading"><div class="eyebrow">Helpful answers</div><h2>Frequently asked questions</h2><p>General information to help you prepare. Your dentist can answer questions specific to your oral health and treatment needs.</p></div>
+        <div class="faq-list">
+          <details><summary>How often should I have a dental check-up?</summary><p>There is no single interval that suits everyone. Your dentist can recommend how often you should attend based on your oral health, history and risk of dental disease.</p></details>
+          <details><summary>What happens during a professional cleaning?</summary><p>A dental professional checks your teeth and gums and may remove plaque and hardened deposits. Polishing may be included when appropriate. You can mention sensitivity or discomfort at any time.</p></details>
+          <details><summary>Are dental X-rays required at every visit?</summary><p>No. Dental X-rays should be recommended when they are likely to help with diagnosis or treatment planning. Your dentist considers your individual needs and uses appropriate precautions.</p></details>
+          <details><summary>Can teeth whitening damage my teeth?</summary><p>Whitening can cause temporary sensitivity or gum irritation, and it is not suitable for everyone. A dental professional can assess your teeth and explain appropriate options and precautions.</p></details>
+          <details><summary>Do dental fillings last forever?</summary><p>No restoration lasts forever. Its lifespan depends on factors such as its size and location, bite forces, oral hygiene and habits. Regular examinations help your dentist monitor existing restorations.</p></details>
+          <details><summary>Is a root canal treatment painful?</summary><p>Local anaesthesia is commonly used to help manage discomfort during treatment. Some tenderness may occur afterwards. Your dentist can explain what to expect and how to contact the clinic if symptoms concern you.</p></details>
+          <details><summary>Are dental implants suitable for everyone?</summary><p>Not always. Suitability depends on factors including oral health, bone support, general health and personal circumstances. An assessment is needed to discuss implants and alternatives.</p></details>
+          <details><summary>At what age should a child first see a dentist?</summary><p>Professional guidance commonly recommends a first dental visit by the child's first birthday or within six months after the first tooth appears. Ask a local dental professional for advice suited to your child.</p></details>
+          <details><summary>What should I do if I have a sudden toothache?</summary><p>Contact a dental clinic for advice and an assessment, especially if pain is severe or persistent. Facial swelling, fever or difficulty opening the mouth should be reported promptly. Difficulty breathing or swallowing requires emergency medical help.</p></details>
+          <details><summary>How can I keep my teeth healthy at home?</summary><p>Brush twice a day with fluoride toothpaste, clean between your teeth daily, limit frequent sugary foods and drinks, and follow the check-up schedule recommended for you.</p></details>
+          <details><summary>Can I ask about treatment costs before starting?</summary><p>Yes. You can ask for an explanation of proposed treatment, estimated costs, alternatives and what may affect the final amount before deciding whether to proceed.</p></details>
+          <details><summary>How do I book an appointment?</summary><p>Use the contact details or appointment form provided by the actual clinic. The buttons on this portfolio demo are illustrative and do not submit a real booking.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact"><div class="container cta-inner"><div><h2>Make room for a healthier smile.</h2><p>Have a question or ready to plan a visit? Contact the clinic to discuss the next step.</p></div><a class="button" href="mailto:hello@brightsmile.example">Request an appointment <span aria-hidden="true">→</span></a></div></section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✦</span><span>BrightSmile Dental<small>Healthy teeth. Happier lives.</small></span></a><p>Patient-focused dental care, clear information and practical support for healthier smiles.</p><p class="footer-note">Portfolio demonstration. Clinic details, credentials, availability and claims must be verified before publication.</p></div>
+      <div><h3>Explore</h3><ul><li><a href="#home">Home</a></li><li><a href="#services">Dental services</a></li><li><a href="#about">Our approach</a></li><li><a href="#first-visit">First visit</a></li><li><a href="#faqs">FAQs</a></li></ul></div>
+      <div><h3>Dental services</h3><ul><li><a href="#services">Preventive care</a></li><li><a href="#services">Restorative dentistry</a></li><li><a href="#services">Cosmetic dentistry</a></li><li><a href="#services">Orthodontics</a></li><li><a href="#services">Children's dentistry</a></li><li><a href="#services">Dental implants</a></li><li><a href="#services">Root canal treatment</a></li><li><a href="#services">Urgent concerns</a></li></ul></div>
+      <div><h3>Contact details</h3><p>123 Smile Avenue<br>Bengaluru, Karnataka, India</p><p>+91 98765 43210</p><p>hello@brightsmile.example</p><p>Mon–Sat: 9:00 AM–6:00 PM</p><p class="footer-note">Sample contact information only. Replace with verified details.</p></div>
+    </div>
+    <div class="container copyright"><span>© 2026 BrightSmile Dental · Portfolio demo</span><span><a href="#contact">Privacy</a> &nbsp;·&nbsp; <a href="#contact">Accessibility</a></span></div>
+  </footer>
+</body>
+</html>
