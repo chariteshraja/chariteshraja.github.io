@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Charitesh | AI Content Specialist & Web Implementation</title>
+
+    <meta name="description"
+          content="Explore Charitesh's portfolio showcasing AI-assisted content creation, SEO, AEM, HTML, CSS, and responsive website implementation.">
+
+    <meta name="keywords"
+          content="AI Content Specialist, SEO, AEM, Website Implementation, HTML, CSS, AI Content Generation">
+
+    <meta name="author" content="Charitesh">
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title"
+          content="Charitesh | AI Content & Website Portfolio">
+
+    <meta property="og:description"
+          content="Explore projects demonstrating AI-assisted content creation, SEO, and website implementation.">
+
+    <meta property="og:type" content="website">
+
+    <meta name="theme-color" content="#071411">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        /* =========================
+           GLOBAL STYLES
+        ========================= */
+
+        :root {
+            --background: #071411;
+            --surface: #10201b;
+            --surface-light: #172923;
+            --green: #43e6ad;
+            --green-dark: #0e9f74;
+            --white: #f5f8f6;
+            --muted: #a4b5ad;
+            --border: rgba(255,255,255,0.10);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--background);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1160px, 90%);
+            margin: auto;
+        }
+
+        .section-label {
+            color: var(--green);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(30px, 5vw, 48px);
+            line-height: 1.2;
+            letter-spacing: -1.5px;
+        }
+
+        .section-description {
+            color: var(--muted);
+            max-width: 600px;
+            margin-top: 15px;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(7,20,17,0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            min-height: 76px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Manrope', sans-serif;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--green);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #c4d0ca;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--green);
+        }
+
+        .nav-cta {
+            padding: 11px 20px;
+            background: var(--green);
+            color: #071411 !important;
+            border-radius: 7px;
+            font-weight: 800;
+        }
+
+        /* =========================
+           HERO SECTION
+        ========================= */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(
+                    ellipse at 85% 35%,
+                    rgba(35, 140, 100, 0.19),
+                    transparent 40%
+                ),
+                linear-gradient(135deg, #071411, #0b1c17);
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgba(67,230,173,0.08);
+            border-radius: 50%;
+            right: -100px;
+            top: 50px;
+            box-shadow:
+                0 0 0 70px rgba(67,230,173,0.02),
+                0 0 0 140px rgba(67,230,173,0.02);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 760px;
+            padding: 100px 0;
+        }
+
+        .availability {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 14px;
+            border: 1px solid rgba(67,230,173,0.3);
+            background: rgba(67,230,173,0.07);
+            color: var(--green);
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+
+        .availability-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--green);
+            box-shadow: 0 0 12px var(--green);
+        }
+
+        .hero h1 {
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(43px, 7vw, 78px);
+            font-weight: 800;
+            line-height: 1.08;
+            letter-spacing: -4px;
+            max-width: 850px;
+        }
+
+        .hero h1 span {
+            color: var(--green);
+        }
+
+        .hero-description {
+            max-width: 630px;
+            margin-top: 25px;
+            color: #b5c4bd;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 35px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 23px;
+            border-radius: 7px;
+            font-size: 14px;
+            font-weight: 800;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+        .button-primary {
+            background: var(--green);
+            color: #071411;
+        }
+
+        .button-primary:hover {
+            background: #72f2c4;
+        }
+
+        .button-secondary {
+            border: 1px solid rgba(255,255,255,0.25);
+            color: var(--white);
+        }
+
+        .button-secondary:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 65px;
+        }
+
+        .hero-tag {
+            padding: 10px 15px;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            color: #c5d1ca;
+            font-size: 12px;
+            background: rgba(255,255,255,0.025);
+        }
+
+        .hero-tag span {
+            color: var(--green);
+            margin-right: 7px;
+        }
+
+        /* =========================
+           ABOUT SECTION
+        ========================= */
+
+        .about {
+            padding: 110px 0;
+            background: #0c1915;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: var(--muted);
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        .about-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .about-card {
+            padding: 24px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: var(--surface);
+        }
+
+        .about-card .icon {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+
+        .about-card h3 {
+            font-size: 15px;
+            margin-bottom: 7px;
+        }
+
+        .about-card p {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* =========================
+           PROJECTS SECTION
+        ========================= */
+
+        .projects {
+            padding: 110px 0;
+        }
+
+        .projects-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 30px;
+            margin-bottom: 45px;
+        }
+
+        .projects-heading p {
+            max-width: 390px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: var(--surface);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+            border-color: rgba(67,230,173,0.55);
+        }
+
+        .project-image {
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #18352b;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .project-image.hotel {
+            background: linear-gradient(135deg, #274c45, #bca27d);
+        }
+
+        .project-image.saas {
+            background: linear-gradient(135deg, #182d55, #4c83c6);
+        }
+
+        .project-image.dental {
+            background: linear-gradient(135deg, #d8f0eb, #6ab8aa);
+        }
+
+        .project-placeholder {
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .project-placeholder strong {
+            display: block;
+            font-size: 23px;
+        }
+
+        .project-placeholder span {
+            display: block;
+            font-size: 11px;
+            margin-top: 8px;
+            opacity: 0.8;
+        }
+
+        .project-body {
+            padding: 25px;
+        }
+
+        .project-category {
+            color: var(--green);
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .project-body h3 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 21px;
+            margin-top: 10px;
+        }
+
+        .project-body p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 10px;
+            min-height: 65px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin: 20px 0;
+        }
+
+        .project-tags span {
+            background: rgba(67,230,173,0.08);
+            border: 1px solid rgba(67,230,173,0.13);
+            color: #a9e7ce;
+            padding: 5px 9px;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+
+        .project-link {
+            display: inline-block;
+            color: var(--green);
+            font-size: 13px;
+            font-weight: 800;
+            margin-top: 5px;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           WORKFLOW SECTION
+        ========================= */
+
+        .workflow {
+            padding: 100px 0;
+            background: #0c1915;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .workflow-heading {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .workflow-heading .section-description {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .workflow-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .workflow-card {
+            padding: 25px 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+
+        .step-number {
+            color: var(--green);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .workflow-card h3 {
+            font-size: 16px;
+            margin-top: 18px;
+            margin-bottom: 10px;
+        }
+
+        .workflow-card p {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* =========================
+           SKILLS SECTION
+        ========================= */
+
+        .skills {
+            padding: 110px 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .skill {
+            padding: 20px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            transition: border-color 0.2s;
+        }
+
+        .skill:hover {
+            border-color: var(--green);
+        }
+
+        .skill h3 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .skill p {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .skill-icon {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        /* =========================
+           CONTACT SECTION
+        ========================= */
+
+        .contact {
+            padding: 90px 0;
+            background:
+                radial-gradient(
+                    ellipse at center,
+                    rgba(67,230,173,0.12),
+                    transparent 70%
+                ),
+                #0c1915;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .contact h2 {
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(30px, 5vw, 48px);
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: var(--muted);
+            max-width: 550px;
+            margin: 0 auto 30px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 25px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer p {
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        footer a {
+            color: var(--green);
+        }
+
+        /* =========================
+           RESPONSIVE DESIGN
+        ========================= */
+
+        @media (max-width: 900px) {
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .workflow-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                gap: 35px;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                width: 90%;
+            }
+
+            nav {
+                min-height: 65px;
+            }
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .nav-links li:nth-child(2),
+            .nav-links li:nth-child(3),
+            .nav-links li:nth-child(4) {
+                display: none;
+            }
+
+            .nav-links a {
+                font-size: 12px;
+            }
+
+            .nav-cta {
+                padding: 8px 12px;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-content {
+                padding: 85px 0;
+            }
+
+            .hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .hero-tags {
+                margin-top: 45px;
+            }
+
+            .about,
+            .projects,
+            .skills {
+                padding: 75px 0;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-heading {
+                display: block;
+            }
+
+            .projects-heading p {
+                margin-top: 15px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-body p {
+                min-height: auto;
+            }
+
+            .workflow-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        /* Respect reduced-motion preferences */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <nav class="container" aria-label="Main navigation">
+            <a href="#home" class="logo" aria-label="Charitesh home">
+                CHARITESH<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#workflow">Process</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li>
+                    <a href="#contact" class="nav-cta">Let's Connect →</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+
+                    <div class="availability">
+                        <span class="availability-dot"></span>
+                        AI CONTENT · SEO · WEB IMPLEMENTATION
+                    </div>
+
+                    <h1>
+                        Creating content.
+                        Building websites.
+                        <span>Making an impact.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I combine AI-assisted content creation,
+                        SEO best practices, and website implementation
+                        to build engaging, accessible, and
+                        search-friendly digital experiences.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button button-primary">
+                            Explore My Projects →
+                        </a>
+
+                        <a href="https://github.com/chariteshraja"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="button button-secondary">
+                            View GitHub ↗
+                        </a>
+                    </div>
+
+                    <div class="hero-tags">
+                        <div class="hero-tag">
+                            <span>✦</span> AI Content
+                        </div>
+
+                        <div class="hero-tag">
+                            <span>✦</span> SEO Optimization
+                        </div>
+
+                        <div class="hero-tag">
+                            <span>✦</span> HTML & CSS
+                        </div>
+
+                        <div class="hero-tag">
+                            <span>✦</span> AEM
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+
+                    <div class="about-text">
+                        <div class="section-label">ABOUT ME</div>
+
+                        <h2 class="section-title">
+                            Technology meets creativity.
+                        </h2>
+
+                        <p>
+                            My professional background includes
+                            Adobe Experience Manager, website
+                            content management, SEO, HTML/CSS,
+                            accessibility, website testing,
+                            redirects, and content publishing.
+                        </p>
+
+                        <p>
+                            My recent work also involves exploring
+                            AI tools for content generation,
+                            image creation, research, fact-checking,
+                            and content refinement.
+                        </p>
+
+                        <p>
+                            I enjoy combining these skills to create
+                            useful, well-structured, and visually
+                            engaging digital experiences.
+                        </p>
+                    </div>
+
+                    <div class="about-cards">
+
+                        <div class="about-card">
+                            <div class="icon">✍️</div>
+                            <h3>AI Content</h3>
+                            <p>Creating and refining digital content.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="icon">🔍</div>
+                            <h3>SEO</h3>
+                            <p>On-page and technical SEO practices.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="icon">💻</div>
+                            <h3>Web Implementation</h3>
+                            <p>AEM, HTML, CSS, and publishing.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="icon">♿</div>
+                            <h3>Accessibility</h3>
+                            <p>Accessible and responsive interfaces.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+
+        <section class="projects" id="projects">
+            <div class="container">
+
+                <div class="projects-heading">
+                    <div>
+                        <div class="section-label">PORTFOLIO</div>
+                        <h2 class="section-title">
+                            Featured Projects
+                        </h2>
+                    </div>
+
+                    <p>
+                        Three website concepts demonstrating
+                        AI-assisted content, SEO implementation,
+                        and modern web design.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+
+                    <!-- HOTEL PROJECT -->
+
+                    <article class="project-card">
+                        <div class="project-image hotel">
+                            <div class="project-placeholder">
+                                <strong>THE GRAND AZURE</strong>
+                                <span>Luxury Hospitality Concept</span>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">
+                                HOSPITALITY
+                            </div>
+
+                            <h3>The Grand Azure</h3>
+
+                            <p>
+                                A luxury hotel website concept
+                                featuring AI-assisted content,
+                                elegant design, and on-page SEO.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>SEO</span>
+                                <span>AI Content</span>
+                            </div>
+
+                            <a href="hotel/"
+                               class="project-link">
+                                View Project →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- SAAS PROJECT -->
+
+                    <article class="project-card">
+                        <div class="project-image saas">
+                            <div class="project-placeholder">
+                                <strong>CONTENTFLOW AI</strong>
+                                <span>AI SaaS Concept</span>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">
+                                TECHNOLOGY
+                            </div>
+
+                            <h3>ContentFlow AI</h3>
+
+                            <p>
+                                A fictional AI platform website
+                                demonstrating product copywriting,
+                                content strategy, and SEO.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>AI Content</span>
+                                <span>UX</span>
+                            </div>
+
+                            <a href="ai-saas/"
+                               class="project-link">
+                                View Project →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- DENTAL PROJECT -->
+
+                    <article class="project-card">
+                        <div class="project-image dental">
+                            <div class="project-placeholder">
+                                <strong>BRIGHTSMILE</strong>
+                                <span>Healthcare Website Concept</span>
+                            </div>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category">
+                                LOCAL BUSINESS
+                            </div>
+
+                            <h3>BrightSmile Dental</h3>
+
+                            <p>
+                                A dental clinic website concept
+                                showcasing local SEO, accessible
+                                content, and responsive design.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Local SEO</span>
+                                <span>Accessibility</span>
+                            </div>
+
+                            <a href="dental-clinic/"
+                               class="project-link">
+                                View Project →
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKFLOW -->
+
+        <section class="workflow" id="workflow">
+            <div class="container">
+
+                <div class="workflow-heading">
+                    <div class="section-label">MY APPROACH</div>
+
+                    <h2 class="section-title">
+                        From idea to implementation.
+                    </h2>
+
+                    <p class="section-description">
+                        A structured workflow combining AI tools,
+                        content quality checks, SEO, and
+                        website implementation.
+                    </p>
+                </div>
+
+                <div class="workflow-grid">
+
+                    <div class="workflow-card">
+                        <div class="step-number">01 / RESEARCH</div>
+                        <h3>Research & Plan</h3>
+                        <p>
+                            Understand the audience, research
+                            relevant topics, and plan the
+                            website content.
+                        </p>
+                    </div>
+
+                    <div class="workflow-card">
+                        <div class="step-number">02 / CREATE</div>
+                        <h3>Generate Content</h3>
+                        <p>
+                            Use AI tools to draft website copy,
+                            generate images, and refine content.
+                        </p>
+                    </div>
+
+                    <div class="workflow-card">
+                        <div class="step-number">03 / OPTIMIZE</div>
+                        <h3>Review & Optimize</h3>
+                        <p>
+                            Check factual accuracy, grammar,
+                            readability, metadata, and
+                            accessibility.
+                        </p>
+                    </div>
+
+                    <div class="workflow-card">
+                        <div class="step-number">04 / PUBLISH</div>
+                        <h3>Implement & Test</h3>
+                        <p>
+                            Implement content, test responsive
+                            layouts, and review technical
+                            SEO and performance.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+
+        <section class="skills" id="skills">
+            <div class="container">
+
+                <div class="section-label">TECHNOLOGY STACK</div>
+
+                <h2 class="section-title">
+                    Tools & Technologies
+                </h2>
+
+                <p class="section-description">
+                    AI-assisted content creation, website
+                    implementation, and SEO technologies.
+                </p>
+
+                <div class="skills-grid">
+
+                    <div class="skill">
+                        <div class="skill-icon">🤖</div>
+                        <h3>ChatGPT</h3>
+                        <p>Content generation</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">✦</div>
+                        <h3>Google Gemini</h3>
+                        <p>Research and content assistance</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">🔎</div>
+                        <h3>Perplexity</h3>
+                        <p>Research and fact-checking</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">🎨</div>
+                        <h3>AI Image Tools</h3>
+                        <p>Visual content creation</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">🌐</div>
+                        <h3>HTML5</h3>
+                        <p>Semantic web structure</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">🎨</div>
+                        <h3>CSS3</h3>
+                        <p>Responsive web design</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">⚙️</div>
+                        <h3>Adobe AEM</h3>
+                        <p>Content management</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">📈</div>
+                        <h3>SEO</h3>
+                        <p>On-page and technical SEO</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">✏️</div>
+                        <h3>Grammarly</h3>
+                        <p>Grammar and clarity</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">🐙</div>
+                        <h3>GitHub</h3>
+                        <p>Version control and hosting</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">⚡</div>
+                        <h3>PageSpeed Insights</h3>
+                        <p>Performance testing</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-icon">♿</div>
+                        <h3>Accessibility</h3>
+                        <p>Inclusive web design</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+
+        <section class="contact" id="contact">
+            <div class="container">
+
+                <div class="section-label">GET IN TOUCH</div>
+
+                <h2>
+                    Let's build something meaningful.
+                </h2>
+
+                <p>
+                    Interested in my work or discussing
+                    opportunities in AI content and
+                    website implementation? Feel free
+                    to connect.
+                </p>
+
+                <a href="https://github.com/chariteshraja"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="button button-primary">
+                    Connect on GitHub ↗
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Charitesh. Portfolio projects.</p>
+
+            <p>
+                Designed and built with
+                <a href="https://pages.github.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub Pages
+                </a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
