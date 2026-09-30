@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BrightSmile Dental | Your Smile, Our Priority</title>
+
+    <meta name="description"
+          content="Discover BrightSmile Dental, a fictional dental clinic website concept featuring general dentistry, cosmetic services, and appointment enquiries.">
+
+    <meta name="keywords"
+          content="dental clinic, dentist, dental care, teeth cleaning, cosmetic dentistry">
+
+    <meta name="author" content="Charitesh Raja">
+
+    <meta property="og:title"
+          content="BrightSmile Dental | Your Smile, Our Priority">
+
+    <meta property="og:description"
+          content="A fictional dental clinic website concept created for a web design portfolio.">
+
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #159c91;
+            --primary-dark: #087e75;
+            --dark: #173b3a;
+            --text: #637674;
+            --light: #f0f9f7;
+            --white: #ffffff;
+            --border: #dcece8;
+            --accent: #f5b94c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+
+        /* Header */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Manrope', sans-serif;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            list-style: none;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            border: 0;
+            border-radius: 8px;
+            padding: 13px 22px;
+            background: var(--primary);
+            color: white;
+            font-size: 13px;
+            font-weight: 800;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--dark);
+            border: 1px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            background: var(--light);
+            color: var(--primary-dark);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: 0;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+
+        .hero {
+            background:
+                radial-gradient(circle at 90% 20%, #dff5ef, transparent 30%),
+                linear-gradient(135deg, #f0faf7, #ffffff);
+            padding: 90px 0;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            padding: 7px 13px;
+            border-radius: 30px;
+            background: #dff4ee;
+            color: var(--primary-dark);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.7px;
+            margin-bottom: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Manrope', sans-serif;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(42px, 5vw, 61px);
+            letter-spacing: -2.5px;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        .hero-copy {
+            color: var(--text);
+            font-size: 16px;
+            max-width: 490px;
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .hero-note {
+            font-size: 11px;
+            color: var(--text);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 24px;
+            display: block;
+        }
+
+        .image-card {
+            position: absolute;
+            left: -22px;
+            bottom: 22px;
+            background: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            box-shadow: 0 12px 35px rgba(20, 65, 55, 0.12);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .image-card span {
+            display: block;
+            color: var(--primary);
+            font-size: 11px;
+            margin-top: 3px;
+        }
+
+        /* General sections */
+
+        section {
+            padding: 85px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 660px;
+            margin: 0 auto 45px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            letter-spacing: -1.5px;
+            margin-bottom: 13px;
+        }
+
+        .section-heading p {
+            color: var(--text);
+            font-size: 14px;
+        }
+
+        /* Services */
+
+        .services {
+            background: white;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            padding: 28px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 35px rgba(20, 65, 55, 0.08);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            display: grid;
+            place-items: center;
+            background: var(--light);
+            border-radius: 12px;
+            font-size: 23px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 12px;
+            color: var(--text);
+        }
+
+        /* About */
+
+        .about {
+            background: var(--light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 370px;
+            object-fit: cover;
+            border-radius: 20px;
+            display: block;
+        }
+
+        .about-content h2 {
+            font-size: clamp(30px, 4vw, 40px);
+            letter-spacing: -1.5px;
+            margin-bottom: 17px;
+        }
+
+        .about-content p {
+            color: var(--text);
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin: 20px 0 25px;
+        }
+
+        .about-list li {
+            margin-bottom: 12px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .about-list li::before {
+            content: "✓";
+            color: var(--primary);
+            font-weight: 900;
+            margin-right: 10px;
+        }
+
+        /* Patient experience */
+
+        .experience {
+            background: white;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .experience-card {
+            padding: 25px;
+            background: var(--light);
+            border-radius: 14px;
+        }
+
+        .experience-card .icon {
+            font-size: 25px;
+            margin-bottom: 13px;
+        }
+
+        .experience-card h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .experience-card p {
+            color: var(--text);
+            font-size: 12px;
+        }
+
+        /* Appointment */
+
+        .appointment {
+            background: #eaf7f3;
+        }
+
+        .appointment-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 55px;
+            align-items: start;
+        }
+
+        .appointment-info h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+        }
+
+        .appointment-info p {
+            color: var(--text);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            margin-top: 17px;
+            font-size: 13px;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .contact-item span {
+            color: var(--text);
+        }
+
+        .appointment-form {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 35px rgba(20, 65, 55, 0.06);
+        }
+
+        .appointment-form h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            font-size: 13px;
+            color: var(--dark);
+            background: white;
+        }
+
+        .form-group textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: 2px solid var(--primary);
+            outline-offset: 1px;
+        }
+
+        .appointment-form .btn {
+            width: 100%;
+        }
+
+        .form-note {
+            font-size: 10px;
+            color: var(--text);
+            margin-top: 12px;
+        }
+
+        /* Footer */
+
+        footer {
+            padding: 32px 0;
+            background: var(--dark);
+            color: white;
+            font-size: 12px;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-content p {
+            color: #c2d4d0;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links a:hover {
+            color: #8de0d0;
+        }
+
+        .portfolio-link {
+            color: #8de0d0;
+        }
+
+        /* Responsive layout */
+
+        @media (max-width: 850px) {
+            .hero-grid,
+            .about-grid,
+            .appointment-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-grid {
+                gap: 45px;
+            }
+
+            .hero-image {
+                max-width: 600px;
+            }
+
+            .service-grid,
+            .experience-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                height: 68px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 68px;
+                left: 0;
+                width: 100%;
+                padding: 22px 5%;
+                background: white;
+                border-bottom: 1px solid var(--border);
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            h1 {
+                font-size: 43px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero-image img {
+                height: 300px;
+            }
+
+            .image-card {
+                left: -5px;
+                bottom: 12px;
+            }
+
+            .service-grid,
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .appointment-form {
+                padding: 22px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav aria-label="Main navigation">
+
+            <a href="#home" class="logo">
+                Bright<span>Smile</span>
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Patient Care</a></li>
+                <li><a href="#appointment" class="btn">Book an Enquiry</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- Hero -->
+
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+
+            <div>
+                <span class="eyebrow">WELCOME TO BRIGHTSMILE</span>
+
+                <h1>
+                    Your smile deserves
+                    <span>gentle care.</span>
+                </h1>
+
+                <p class="hero-copy">
+                    Discover a welcoming approach to dental care.
+                    BrightSmile Dental is a fictional clinic concept
+                    focused on clear communication, comfortable
+                    visits, and everyday oral health.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn">
+                        Request an Appointment →
+                    </a>
+
+                    <a href="#services" class="btn btn-outline">
+                        Explore Services
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    A fictional clinic website created as a portfolio project.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=85"
+                    alt="Modern dental clinic treatment room"
+                    fetchpriority="high">
+
+                <div class="image-card">
+                    A welcoming dental experience
+                    <span>Care begins with a conversation.</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="services" id="services">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">OUR SERVICES</span>
+                <h2>Dental care for everyday smiles</h2>
+                <p>
+                    Explore example service descriptions for a
+                    general dental clinic website.
+                </p>
+            </div>
+
+            <div class="service-grid">
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🦷</div>
+                    <h3>General Dentistry</h3>
+                    <p>
+                        Routine dental examinations and
+                        personalised oral health guidance
+                        for everyday dental care.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">✨</div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>
+                        Learn about cosmetic dental options
+                        and discuss your smile goals with
+                        a qualified dental professional.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🪥</div>
+                    <h3>Teeth Cleaning</h3>
+                    <p>
+                        Professional cleaning appointments
+                        and advice on maintaining a
+                        consistent oral hygiene routine.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">🛡️</div>
+                    <h3>Preventive Care</h3>
+                    <p>
+                        Routine check-ups and preventive
+                        care discussions to help you
+                        maintain your oral health.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">😁</div>
+                    <h3>Smile Consultation</h3>
+                    <p>
+                        Discuss your concerns and
+                        explore treatment options
+                        with a dental professional.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">👨‍👩‍👧</div>
+                    <h3>Family Dentistry</h3>
+                    <p>
+                        Example dental service content
+                        for families seeking information
+                        about routine dental visits.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+
+    <section class="about" id="about">
+        <div class="container about-grid">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=85"
+                    alt="Bright and modern dental clinic interior"
+                    loading="lazy">
+            </div>
+
+            <div class="about-content">
+                <span class="eyebrow">ABOUT OUR CLINIC</span>
+
+                <h2>A thoughtful approach to dental care</h2>
+
+                <p>
+                    At BrightSmile Dental, the fictional clinic
+                    featured in this portfolio project, the
+                    focus is on making dental information
+                    approachable and easy to understand.
+                </p>
+
+                <p>
+                    The website demonstrates how a clinic can
+                    explain its services, answer common questions,
+                    and help visitors find the next step.
+                </p>
+
+                <ul class="about-list">
+                    <li>Clear and accessible service information</li>
+                    <li>Simple appointment enquiry process</li>
+                    <li>Responsive design for mobile visitors</li>
+                    <li>Easy-to-navigate website structure</li>
+                </ul>
+
+                <a href="#appointment" class="btn">
+                    Contact the Clinic
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Patient experience -->
+
+    <section class="experience" id="experience">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">PATIENT EXPERIENCE</span>
+                <h2>Designed around your visit</h2>
+                <p>
+                    Sample content highlighting the information
+                    a dental clinic could provide to visitors.
+                </p>
+            </div>
+
+            <div class="experience-grid">
+
+                <article class="experience-card">
+                    <div class="icon" aria-hidden="true">💬</div>
+                    <h3>Clear Communication</h3>
+                    <p>
+                        Understand the purpose of your visit
+                        and discuss any questions with
+                        your dental professional.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <div class="icon" aria-hidden="true">📋</div>
+                    <h3>Informed Decisions</h3>
+                    <p>
+                        Explore available options and
+                        receive information to help you
+                        make informed decisions about care.
+                    </p>
+                </article>
+
+                <article class="experience-card">
+                    <div class="icon" aria-hidden="true">📅</div>
+                    <h3>Simple Enquiries</h3>
+                    <p>
+                        Use a straightforward enquiry form
+                        to express interest in scheduling
+                        a dental appointment.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment -->
+
+    <section class="appointment" id="appointment">
+        <div class="container appointment-grid">
+
+            <div class="appointment-info">
+                <span class="eyebrow">GET IN TOUCH</span>
+
+                <h2>Let's talk about your smile.</h2>
+
+                <p>
+                    Have questions about dental services?
+                    Use the sample form to see how an
+                    appointment enquiry could work.
+                </p>
+
+                <p>
+                    This portfolio demonstration does not
+                    send or store appointment requests.
+                </p>
+
+                <div class="contact-item">
+                    <strong>📍 Location</strong>
+                    <span>Fictional clinic — no physical address</span>
+                </div>
+
+                <div class="contact-item">
+                    <strong>📞 Phone</strong>
+                    <span>Demo website — no real phone number</span>
+                </div>
+
+                <div class="contact-item">
+                    <strong>✉️ Email</strong>
+                    <span>Demo website — no real email address</span>
+                </div>
+            </div>
+
+            <form class="appointment-form" id="appointmentForm">
+                <h3>Appointment Enquiry</h3>
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service of Interest</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="general">General Dentistry</option>
+                        <option value="cosmetic">Cosmetic Dentistry</option>
+                        <option value="cleaning">Teeth Cleaning</option>
+                        <option value="preventive">Preventive Care</option>
+                        <option value="consultation">Smile Consultation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message (Optional)</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="How can we help?"></textarea>
+                </div>
+
+                <button type="submit" class="btn">
+                    Submit Enquiry
+                </button>
+
+                <p class="form-note">
+                    Demonstration only. No personal information
+                    is sent or stored.
+                </p>
+            </form>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+    <div class="container footer-content">
+
+        <div>
+            <strong>BrightSmile Dental</strong>
+            <p>Fictional dental clinic portfolio concept.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#appointment">Contact</a>
+            <a href="https://chariteshraja.github.io/"
+               class="portfolio-link">
+                Main Portfolio
+            </a>
+        </div>
+
+        <p>© 2026 BrightSmile Dental — Concept Project</p>
+
+    </div>
+</footer>
+
+<script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".nav-links");
+
+    menuButton.addEventListener("click", function () {
+        const isOpen = navigation.classList.toggle("open");
+
+        menuButton.setAttribute("aria-expanded", isOpen);
+        menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            navigation.classList.remove("open");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.textContent = "☰";
+        });
+    });
+
+    const appointmentForm =
+        document.getElementById("appointmentForm");
+
+    appointmentForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!appointmentForm.checkValidity()) {
+            appointmentForm.reportValidity();
+            return;
+        }
+
+        alert(
+            "Thank you! This is a demonstration form. " +
+            "No appointment request has been sent."
+        );
+
+        appointmentForm.reset();
+    });
+</script>
+
+</body>
+</html>
