@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ContentFlow AI | Create Better Content, Faster</title>
+
+    <meta name="description"
+          content="Discover ContentFlow AI, a fictional AI content platform concept designed to help marketing teams create blogs, social media posts, and marketing copy.">
+
+    <meta name="keywords"
+          content="AI content creation, AI writing assistant, content marketing, marketing automation">
+
+    <meta name="author" content="Charitesh Raja">
+
+    <meta property="og:title" content="ContentFlow AI | Create Better Content">
+    <meta property="og:description"
+          content="A portfolio concept for an AI-powered content creation platform.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #6558e8;
+            --primary-dark: #5144d1;
+            --dark: #17152b;
+            --text: #55536a;
+            --light: #f7f6ff;
+            --white: #ffffff;
+            --border: #e9e7f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+
+        /* Navigation */
+
+        header {
+            background: rgba(255, 255, 255, 0.96);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Manrope', sans-serif;
+            font-size: 23px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            list-style: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 23px;
+            border-radius: 9px;
+            background: var(--primary);
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            border: 0;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--dark);
+            border: 1px solid var(--border);
+        }
+
+        .btn-outline:hover {
+            background: var(--light);
+            color: var(--primary);
+        }
+
+        .menu-toggle {
+            display: none;
+            border: 0;
+            background: none;
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+
+        .hero {
+            padding: 105px 0 90px;
+            background:
+                radial-gradient(circle at 85% 20%, #ece9ff 0, transparent 28%),
+                linear-gradient(180deg, #fbfaff, #ffffff);
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 65px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--primary);
+            background: #efedff;
+            border-radius: 50px;
+            padding: 7px 14px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.6px;
+            margin-bottom: 22px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Manrope', sans-serif;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(42px, 5vw, 62px);
+            letter-spacing: -2.5px;
+            margin-bottom: 22px;
+        }
+
+        h1 span {
+            color: var(--primary);
+        }
+
+        .hero-copy {
+            font-size: 17px;
+            color: var(--text);
+            max-width: 510px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 28px;
+        }
+
+        .hero-note {
+            font-size: 12px;
+            color: #77748b;
+        }
+
+        /* Product preview */
+
+        .preview-wrap {
+            position: relative;
+        }
+
+        .preview {
+            background: white;
+            border: 1px solid #e9e6fa;
+            border-radius: 18px;
+            padding: 22px;
+            box-shadow: 0 25px 70px rgba(43, 31, 111, 0.13);
+            transform: rotate(1deg);
+        }
+
+        .preview-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 20px;
+        }
+
+        .preview-title {
+            font-weight: 800;
+            font-size: 14px;
+        }
+
+        .preview-status {
+            color: #279e6b;
+            background: #e9f9f1;
+            padding: 5px 10px;
+            border-radius: 30px;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .preview-label {
+            color: #77748b;
+            font-size: 11px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .preview-input {
+            background: #f8f7fc;
+            border: 1px solid #eeecf6;
+            border-radius: 9px;
+            padding: 12px;
+            font-size: 12px;
+            margin-bottom: 17px;
+        }
+
+        .preview-generated {
+            border-left: 3px solid var(--primary);
+            padding: 10px 13px;
+            background: #f9f8ff;
+            border-radius: 0 8px 8px 0;
+            margin: 12px 0 17px;
+            font-size: 12px;
+            color: #5e5a73;
+        }
+
+        .preview-generated strong {
+            display: block;
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .preview-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #77748b;
+        }
+
+        .mini-btn {
+            background: var(--primary);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .floating-card {
+            position: absolute;
+            right: -20px;
+            bottom: -24px;
+            background: white;
+            padding: 14px 18px;
+            border-radius: 12px;
+            box-shadow: 0 12px 35px rgba(43, 31, 111, 0.13);
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .floating-card span {
+            display: block;
+            color: #279e6b;
+            font-size: 11px;
+            margin-top: 3px;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 48px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            letter-spacing: -1.5px;
+            margin-bottom: 14px;
+        }
+
+        .section-heading p {
+            color: var(--text);
+            font-size: 15px;
+        }
+
+        /* Features */
+
+        .features {
+            background: var(--white);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .feature-card {
+            padding: 28px;
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            background: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(43, 31, 111, 0.08);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: grid;
+            place-items: center;
+            background: #efedff;
+            border-radius: 12px;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: var(--text);
+            font-size: 13px;
+        }
+
+        /* How it works */
+
+        .how {
+            background: var(--light);
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .step-number {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 18px;
+            background: var(--primary);
+            color: white;
+            font-weight: 800;
+        }
+
+        .step h3 {
+            font-size: 17px;
+            margin-bottom: 9px;
+        }
+
+        .step p {
+            color: var(--text);
+            font-size: 13px;
+        }
+
+        /* Content examples */
+
+        .examples {
+            background: white;
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .example-card {
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        .example-visual {
+            height: 145px;
+            display: grid;
+            place-items: center;
+            font-size: 45px;
+            background: linear-gradient(135deg, #eeeaff, #f8eaff);
+        }
+
+        .example-card:nth-child(2) .example-visual {
+            background: linear-gradient(135deg, #e3f5ff, #e9edff);
+        }
+
+        .example-card:nth-child(3) .example-visual {
+            background: linear-gradient(135deg, #fff0e4, #ffe5ef);
+        }
+
+        .example-content {
+            padding: 20px;
+        }
+
+        .example-content small {
+            color: var(--primary);
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .example-content h3 {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        .example-content p {
+            color: var(--text);
+            font-size: 12px;
+        }
+
+        /* CTA */
+
+        .cta {
+            padding: 70px 0;
+            background: var(--dark);
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: clamp(30px, 4vw, 42px);
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #c5c2d6;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        /* Footer */
+
+        footer {
+            padding: 30px 0;
+            background: #111020;
+            color: #c5c2d6;
+            font-size: 12px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .portfolio-link {
+            color: #bcb4ff;
+        }
+
+        /* Responsive design */
+
+        @media (max-width: 850px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 55px;
+            }
+
+            .hero {
+                padding-top: 75px;
+            }
+
+            .preview-wrap {
+                max-width: 550px;
+                width: 100%;
+                margin: auto;
+            }
+
+            .feature-grid,
+            .example-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                height: 68px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 68px;
+                left: 0;
+                width: 100%;
+                padding: 22px 5%;
+                background: white;
+                border-bottom: 1px solid var(--border);
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+            }
+
+            .nav-links.open {
+                display: flex;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            h1 {
+                font-size: 43px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .feature-grid,
+            .example-grid,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-card {
+                right: -5px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *, *::before, *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <nav aria-label="Main navigation">
+
+            <a href="#home" class="logo" aria-label="ContentFlow AI home">
+                Content<span>Flow</span> AI
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navigation">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#examples">Use Cases</a></li>
+                <li><a href="#contact" class="btn">Explore Concept</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- Hero section -->
+
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+
+            <div>
+                <span class="eyebrow">YOUR CREATIVE WORKSPACE</span>
+
+                <h1>
+                    Great content.<br>
+                    <span>Less busywork.</span>
+                </h1>
+
+                <p class="hero-copy">
+                    Meet ContentFlow AI, a fictional AI content
+                    platform concept designed to help marketing
+                    teams brainstorm, write, and refine content
+                    in one place.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#features" class="btn">
+                        Explore Features →
+                    </a>
+
+                    <a href="#how-it-works" class="btn btn-outline">
+                        See How It Works
+                    </a>
+                </div>
+
+                <p class="hero-note">
+                    A fictional product concept created for a web
+                    design and content portfolio.
+                </p>
+            </div>
+
+            <div class="preview-wrap">
+                <div class="preview">
+
+                    <div class="preview-top">
+                        <span class="preview-title">
+                            ✦ Content Studio
+                        </span>
+                        <span class="preview-status">
+                            ● Sample interface
+                        </span>
+                    </div>
+
+                    <p class="preview-label">
+                        WHAT WOULD YOU LIKE TO CREATE?
+                    </p>
+
+                    <div class="preview-input">
+                        Write a blog introduction about sustainable
+                        travel for modern travellers.
+                    </div>
+
+                    <p class="preview-label">
+                        SAMPLE GENERATED CONTENT
+                    </p>
+
+                    <div class="preview-generated">
+                        <strong>
+                            Travel further. Leave a lighter footprint.
+                        </strong>
+                        Discover a more thoughtful way to explore
+                        the world. From choosing local experiences
+                        to making conscious travel decisions,
+                        small changes can make every journey
+                        more meaningful.
+                    </div>
+
+                    <div class="preview-footer">
+                        <span>Example content preview</span>
+                        <span class="mini-btn">Copy text</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-card">
+                    ✨ Your next idea starts here
+                    <span>Concept interface</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Features -->
+
+    <section class="features" id="features">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">FEATURES</span>
+                <h2>Everything you need to create</h2>
+                <p>
+                    A sample feature set showing how an AI writing
+                    platform could support everyday marketing work.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>AI Writing Assistant</h3>
+                    <p>
+                        Develop blog introductions, product
+                        descriptions, email drafts, and other
+                        marketing content from simple prompts.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🔎</div>
+                    <h3>SEO Content Ideas</h3>
+                    <p>
+                        Organise keyword ideas, generate title
+                        suggestions, and plan content around
+                        relevant search topics.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Social Media Copy</h3>
+                    <p>
+                        Create sample captions, campaign ideas,
+                        and platform-specific content for
+                        different social media channels.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Brand Voice</h3>
+                    <p>
+                        Maintain a consistent tone across
+                        marketing materials with reusable
+                        brand voice guidelines.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Content Planning</h3>
+                    <p>
+                        Organise content ideas into a simple
+                        workflow for planning and reviewing
+                        upcoming campaigns.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Team Collaboration</h3>
+                    <p>
+                        Imagine a shared workspace where
+                        marketing teams can review drafts,
+                        exchange feedback, and refine copy.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+
+    <section class="how" id="how-it-works">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">HOW IT WORKS</span>
+                <h2>From idea to polished content</h2>
+                <p>
+                    A simple example of how a content creation
+                    workflow could be presented to users.
+                </p>
+            </div>
+
+            <div class="steps">
+
+                <article class="step">
+                    <div class="step-number">1</div>
+                    <h3>Describe your idea</h3>
+                    <p>
+                        Start with a topic, a campaign goal,
+                        or a simple content brief.
+                    </p>
+                </article>
+
+                <article class="step">
+                    <div class="step-number">2</div>
+                    <h3>Generate a draft</h3>
+                    <p>
+                        Use an AI writing workflow to explore
+                        possible headlines, outlines, and drafts.
+                    </p>
+                </article>
+
+                <article class="step">
+                    <div class="step-number">3</div>
+                    <h3>Review and refine</h3>
+                    <p>
+                        Edit the draft, verify the details,
+                        and adapt it to your brand's voice.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples -->
+
+    <section class="examples" id="examples">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="eyebrow">USE CASES</span>
+                <h2>One workspace. Different possibilities.</h2>
+                <p>
+                    Example content categories that could be
+                    supported by a platform like this.
+                </p>
+            </div>
+
+            <div class="example-grid">
+
+                <article class="example-card">
+                    <div class="example-visual" aria-hidden="true">
+                        📝
+                    </div>
+
+                    <div class="example-content">
+                        <small>Blog writing</small>
+                        <h3>Turn ideas into articles</h3>
+                        <p>
+                            Create outlines, introductions,
+                            and draft content for blog posts.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="example-card">
+                    <div class="example-visual" aria-hidden="true">
+                        📣
+                    </div>
+
+                    <div class="example-content">
+                        <small>Marketing campaigns</small>
+                        <h3>Build campaign messaging</h3>
+                        <p>
+                            Explore headlines, calls to action,
+                            and campaign copy for marketing teams.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="example-card">
+                    <div class="example-visual" aria-hidden="true">
+                        💬
+                    </div>
+
+                    <div class="example-content">
+                        <small>Social media</small>
+                        <h3>Write engaging captions</h3>
+                        <p>
+                            Develop social media captions
+                            and content ideas for different audiences.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Make room for better ideas.</h2>
+
+            <p>
+                Explore this fictional SaaS landing page
+                and see how product content and web design
+                work together.
+            </p>
+
+            <a href="https://chariteshraja.github.io/"
+               class="btn">
+                Back to Portfolio →
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+    <div class="container footer-content">
+
+        <div>
+            <strong>ContentFlow AI</strong>
+            <p>Fictional product concept for a portfolio.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#examples">Use Cases</a>
+            <a href="https://chariteshraja.github.io/"
+               class="portfolio-link">
+                Main Portfolio
+            </a>
+        </div>
+
+        <p>© 2026 ContentFlow AI — Concept Project</p>
+
+    </div>
+</footer>
+
+<script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".nav-links");
+
+    menuButton.addEventListener("click", function () {
+        const isOpen = navigation.classList.toggle("open");
+
+        menuButton.setAttribute("aria-expanded", isOpen);
+        menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            navigation.classList.remove("open");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.textContent = "☰";
+        });
+    });
+</script>
+
+</body>
+</html>
